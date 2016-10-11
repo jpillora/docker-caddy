@@ -46,7 +46,7 @@
 
 1. Bind `<docker-host-ip>` to `<your-hostname>` using your DNS provider
 
-1. Change `http://localhost:80` to `https://<your-hostname>:443` and **Restart**
+1. Change `http://localhost:80` to `https://<your-hostname>:443`, below the `proxy` line - add `tls <your-email>` and **Restart**
 
 1. You now have an HTTPS web server running at `https://<your-hostname>`
 
