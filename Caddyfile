@@ -1,0 +1,7 @@
+# Caddy config, for a more information, see:
+#  https://caddyserver.com/docs/caddyfile
+http://localhost:80 {
+    gzip
+    log stdout
+    proxy / example.com
+}
