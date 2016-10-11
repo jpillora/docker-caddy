@@ -15,7 +15,7 @@
 	``` ini
 	# Caddy config, for a more information, see:
 	#  https://caddyserver.com/docs/caddyfile
-	http://localhost:80 {
+	:80 {
 	    gzip
 	    log stdout
 	    proxy / example.com
@@ -44,11 +44,15 @@
 
 1. You now have an HTTP web server running at `http://<your-hostname>`
 
-1. Bind `<docker-host-ip>` to `<your-hostname>` using your DNS provider
+1. Using your DNS provider, create A record: `<docker-host-ip>` to `<your-hostname>`
 
-1. Change `http://localhost:80` to `https://<your-hostname>:443`, below the `proxy` line - add `tls <your-email>` and **Restart**
+1. Change `:80` to `https://<your-hostname>:443`, and add a new line `tls <your-email>` above the `gzip` line, then **Restart**
 
 1. You now have an HTTPS web server running at `https://<your-hostname>`
+
+Extras
+
+* Bind the web UI to an internal IP address `-p <internal-ip>:58080:8080` and then it might be safe to remove `USER`/`PASS`
 
 #### MIT License
 
