@@ -12,7 +12,7 @@ RUN apk update \
 	&& curl -sL $WEBPROC_URL | gzip -d - > /usr/local/bin/webproc \
 	&& chmod +x /usr/local/bin/webproc \
 	&& curl -sL $CADDY_URL | gzip -d - | tar -xv -C /tmp -f - \
-	&& mv /tmp/caddy_linux_amd64 /usr/local/bin/caddy \
+	&& mv /tmp/caddy /usr/local/bin/caddy \
 	&& apk del .build-deps \
 	&& rm -rf /tmp/* /var/cache/apk/*
 #configure caddy
