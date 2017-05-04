@@ -3,7 +3,7 @@ MAINTAINER dev@jpillora.com
 # webproc release settings
 ENV WEBPROC_VERSION 0.1.7
 ENV WEBPROC_URL https://github.com/jpillora/webproc/releases/download/$WEBPROC_VERSION/webproc_linux_amd64.gz
-ENV CADDY_VERSION 0.9.3
+ENV CADDY_VERSION 0.10.2
 ENV CADDY_URL https://github.com/mholt/caddy/releases/download/v$CADDY_VERSION/caddy_linux_amd64.tar.gz
 # fetch caddy and webproc binary
 RUN apk update \
