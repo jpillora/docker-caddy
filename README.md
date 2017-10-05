@@ -41,7 +41,8 @@
 
 1. Visit `http://<docker-host-ip>:58080`, authenticate with `foo/bar` and you should see
 
-	SCREENSHOT TODO
+	![screen shot 2017-10-05 at 6 27 53 pm](https://user-images.githubusercontent.com/633843/31215368-f2ab2842-a9fa-11e7-83b7-fa917a022f08.png)
+
 
 1. You now have an HTTP web server running at `http://<your-hostname>`
 
@@ -57,7 +58,7 @@ Extras
 
 #### MIT License
 
-Copyright &copy; 2016 Jaime Pillora &lt;dev@jpillora.com&gt;
+Copyright &copy; 2017 Jaime Pillora &lt;dev@jpillora.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
